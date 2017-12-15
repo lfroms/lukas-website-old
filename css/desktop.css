@@ -22,9 +22,9 @@ html, body {
     font-family: "Futura";
     text-transform: uppercase;
     font-size: 36px;
+    
     float: right;
-    margin-right: 25px;
-    margin-top: 21px;
+    margin: 21px 25px 0 0;
 }
 
 .slide-menu {
@@ -94,7 +94,6 @@ html, body {
     border-radius: 31px;
 
     background-image: linear-gradient(134deg, #3023AE 0%, #C86DD7 100%);
-    box-shadow: 2px 2px 11px 0 #000000;
     transition: all 0.7s ease;
 
     z-index: 100;
@@ -118,26 +117,30 @@ html, body {
 }
 
 .section-title {
-    width: 33px;
-    height: 100vh;
-    cursor: pointer;
-    position: absolute;
     top: 0;
     left: 28px;
+    width: 33px;
+    height: 100vh;
+    
+    position: absolute;
     display: block;
+    
     z-index: 10;
     will-change: transform;
 }
 
 .section-title > span {
-    display: block;
-    position: absolute;
-    width: 500px;
     bottom: 250px;
     left: 50%;
-    color: #fff;
-    text-transform: uppercase;
+    width: 500px;
+    
+    display: block;
+    position: absolute;
+    
+    color: #ffffff;
+    
     font-family: "Futura", sans-serif;
+    text-transform: uppercase;
     font-size: 36px;
     line-height: 1;
     transform: translateX(-50%) rotate(-90deg);
@@ -153,11 +156,11 @@ section {
     position: relative;
 }
 
-.fixed {
+.section-title.fixed {
     position: fixed;
 }
 
-.bottom {
+.section-title.bottom {
     top: auto;
     bottom: 0;
 }
