@@ -177,18 +177,6 @@ section {
     margin-left: 150px;
 }
 
-.social-icons {
-    opacity: 0.7;
-    position: fixed;
-    right: 25px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.social-icons > div {
-    margin-bottom: 16px;
-}
-
 /* --- PAGES --- */
 
 #about {
