@@ -10,28 +10,40 @@ $(document).ready(function() {
             $(".slide-menu").removeClass("hidden");
         }
     });
-});
 
-$(window).scroll(function() {
-    var block = $(".wrapper");
-    var b_height = block.height();
-    var sections = block.find('section');
-    var sections_l = sections.length;
-    var s_height = $(this).height();
-    var top = 0;
+    $(window).scroll(function() {
+        var wrapper = $(".wrapper");
+        var wrapperHeight = wrapper.height();
+        var sections = wrapper.find('section');
+        var pageHeight = $(this).height();
+        var pageTop = $(this).scrollTop();
 
-    $.each($(".page-data"), function() {
-        var bottom = top + s_height;
-        var s_top = $(this).offset().top;
-        var s_bottom = s_top + $(this).outerHeight();
-        var bc = $(this).find('.section-title');
+        $.each($(".page-data"), function() {
+            var bottom = pageTop + pageHeight;
+            var sectionTop = $(this).offset().top;
+            var sectionBottom = sectionTop + $(this).outerHeight();
+            var sectionTitle = $(this).find('.section-title');
 
-        if (top >= s_top && bottom < s_bottom && !bc.hasClass('fixed')) {
-            bc.addClass('fixed').removeClass('bottom');
-        } else if (bc.hasClass('fixed') && bottom > s_bottom) {
-            bc.addClass('bottom').removeClass('fixed');
-        } else if (bc.hasClass('fixed') && top < s_top) {
-            bc.removeClass('bottom').removeClass('fixed');
-        }
+            if (pageTop >= sectionTop && bottom < sectionBottom && !sectionTitle.hasClass('fixed')) {
+                sectionTitle.addClass('fixed').removeClass('bottom');
+                
+            } else if (sectionTitle.hasClass('fixed') && bottom > sectionBottom) {
+                sectionTitle.addClass('bottom').removeClass('fixed');
+                
+            } else if (sectionTitle.hasClass('fixed') && pageTop < sectionTop) {
+                sectionTitle.removeClass('bottom').removeClass('fixed');
+            }
+        });
+    });
+    
+    $(window).resize(function() {
+        initializeStickyScroll();
     });
 });
+
+function initializeStickyScroll() {
+    var wrapper = $(".wrapper");
+    var wrapperHeight = wrapper.height();
+    var sections = wrapper.find('section');
+    var pageHeight = sections.height();
+}
