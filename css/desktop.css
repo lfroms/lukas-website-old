@@ -59,7 +59,7 @@ html, body {
 
     background: #f5f5f5;
     color: #616161;
-    box-shadow: -16px 0px 28px 24px rgba(0,0,0,0.75);
+    box-shadow: -36px 0px 78px 24px rgba(0,0,0,0.75);
 
     width: 375px;
     height: 100%;
@@ -81,8 +81,12 @@ html, body {
     list-style: none;
 }
 
-.slide-menu > nav > li {
+.slide-menu > nav > a {
     padding-left: 15px;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    
     line-height: 50px;
     height: 50px;
     border-top: 1px solid #bdbdbd;
@@ -90,7 +94,12 @@ html, body {
     transition: all 0.1s ease-in-out;
 }
 
-.slide-menu > nav > li:hover {
+.slide-menu > nav > a.active {
+    background: #e0e0e0;
+    transition: all 0.1s ease-in-out;
+}
+
+.slide-menu > nav > a:hover {
     background: #e0e0e0;
     transition: all 0.1s ease-in-out;
     cursor: pointer;
@@ -298,7 +307,7 @@ p.d-element {
 }
 
 #home {
-    background: url(../res/svg/hero_back.svg);
+    background: url(../res/svg/hero_back.svg) repeat-y;
     background-size: 1000px;
     background-position: right;
 }

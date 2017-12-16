@@ -1,15 +1,19 @@
 $(document).ready(function() {
     $(".hamburger").click(function() {
         if ($(".hamburger").hasClass("is-active")) {
-            $(".hamburger").removeClass("is-active");
-            $(".menu-button").removeClass("is-active");
-            $(".slide-menu").addClass("hidden");
+            removeMenuActiveClasses();
         } else {
-            $(".hamburger").addClass("is-active");
-            $(".menu-button").addClass("is-active");
-            $(".slide-menu").removeClass("hidden");
+            addMenuActiveClasses();
         }
     });
+
+    $("section").click(function() {
+        if ($(".hamburger").hasClass("is-active")) {
+            removeMenuActiveClasses();
+        }
+    });
+
+    initOnLoad();
 
     $(window).scroll(function() {
         var wrapper = $(".wrapper");
@@ -26,22 +30,46 @@ $(document).ready(function() {
 
             if (pageTop >= sectionTop && bottom < sectionBottom && !sectionTitle.hasClass('fixed')) {
                 sectionTitle.addClass('fixed').removeClass('bottom');
-                
+
             } else if (sectionTitle.hasClass('fixed') && bottom > sectionBottom) {
                 sectionTitle.addClass('bottom').removeClass('fixed');
-                
+
             } else if (sectionTitle.hasClass('fixed') && pageTop < sectionTop) {
                 sectionTitle.removeClass('bottom').removeClass('fixed');
             }
         });
+
+        $('nav a').each(function () {
+            var currLink = $(this);
+            var refElement = $(currLink.attr("href"));
+            if (refElement.position().top <= pageTop && refElement.position().top + refElement.height() > pageTop) {
+                $('nav a').removeClass("active");
+                currLink.addClass("active");
+            }
+            else {
+                currLink.removeClass("active");
+            }
+        });
     });
-    
+
     $(window).resize(function() {
-        initializeStickyScroll();
+        initOnLoad();
     });
 });
 
-function initializeStickyScroll() {
+function addMenuActiveClasses() {
+    $(".hamburger").addClass("is-active");
+    $(".menu-button").addClass("is-active");
+    $(".slide-menu").removeClass("hidden");
+}
+
+function removeMenuActiveClasses() {
+    $(".hamburger").removeClass("is-active");
+    $(".menu-button").removeClass("is-active");
+    $(".slide-menu").addClass("hidden");
+}
+
+function initOnLoad() {
     var wrapper = $(".wrapper");
     var wrapperHeight = wrapper.height();
     var sections = wrapper.find('section');
