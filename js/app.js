@@ -17,23 +17,12 @@ $(document).ready(function() {
 
     $(window).scroll(function() {
         updateSectionTitle();
-        var pageTop = $(this).scrollTop();
-        
-        $('nav a').each(function () {
-            var currLink = $(this);
-            var refElement = $(currLink.attr("href"));
-            if (refElement.position().top <= pageTop && refElement.position().top + refElement.height() > pageTop) {
-                $('nav a').removeClass("active");
-                currLink.addClass("active");
-            }
-            else {
-                currLink.removeClass("active");
-            }
-        });
+        updateActiveMenuItem();
     });
 
     $(window).resize(function() {
         updateSectionTitle();
+        updateActiveMenuItem();
     });
 });
 
@@ -70,6 +59,22 @@ function updateSectionTitle() {
 
         } else if (sectionTitle.hasClass('fixed') && pageTop < sectionTop) {
             sectionTitle.removeClass('bottom').removeClass('fixed');
+        }
+    });
+}
+
+function updateActiveMenuItem() {
+    var pageTop = $(this).scrollTop();
+
+    $('nav a').each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        if (refElement.position().top <= pageTop && refElement.position().top + refElement.height() > pageTop) {
+            $('nav a').removeClass("active");
+            currLink.addClass("active");
+        }
+        else {
+            currLink.removeClass("active");
         }
     });
 }
