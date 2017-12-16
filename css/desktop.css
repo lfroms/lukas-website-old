@@ -195,9 +195,11 @@ h1 {
 /* --- PAGES --- */
 
 #home > .content {
-    margin-left: 200px;
-    padding-top: 170px;
+    margin-left: 160px;
+    margin-top: 110px;
+    padding: 40px;
     width: 600px;
+    background: #191919;
 }
 
 #home > .content h1 {
@@ -282,6 +284,12 @@ p.d-element {
 .space {
     display: block;
     height: 20px;
+}
+
+#home {
+    background: url(../res/svg/hero_back.svg);
+    background-size: 970px;
+    background-position: center;
 }
 
 #home .subtle {
