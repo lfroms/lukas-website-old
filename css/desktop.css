@@ -8,7 +8,9 @@ html, body {
     background: #191919;
     color: #f5f5f5;
 
-    font-family: "Futura", sans-serif;  
+    font-family: "Futura", sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
 }
 
 .wrapper {
@@ -26,7 +28,7 @@ html, body {
     position: relative;
     float: right;
 
-    background: #f5f5f5;
+    background: #e0e0e0;
     width: 180px;
     height: 470px;
     margin-right: 170px;
@@ -158,7 +160,7 @@ html, body {
     display: block;
     position: absolute;
 
-    color: #ffffff;
+    color: #f5f5f5;
 
     font-family: "Futura", sans-serif;
     text-transform: uppercase;
@@ -194,13 +196,13 @@ h1 {
 
 #home > .content {
     margin-left: 200px;
-    padding-top: 185px;
+    padding-top: 170px;
     width: 600px;
 }
 
 #home > .content h1 {
     font-weight: 400;
-    font-size: 275px;
+    font-size: 288px;
     background: linear-gradient(134deg, #0044FF 0%, #DD0000 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -213,9 +215,9 @@ h1 {
 }
 
 #home > .content p {
-    font-size: 17px;
+    font-size: 22px;
     font-weight: lighter;
-    color: #d8d8d8;
+    color: #e0e0e0;
 }
 
 .col-2 {
@@ -258,9 +260,9 @@ button.ui-button {
     border: none;
     outline: none;
     cursor: pointer;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Futura', sans-serif;
     letter-spacing: 0.5px;
-    font-size: 13px;
+    font-size: 15px;
     padding-top: 3px;
 }
 
@@ -282,9 +284,9 @@ p.d-element {
     height: 20px;
 }
 
-.subtle {
+#home .subtle {
     margin-top: 0;
-    font-size: 13px !important;
+    font-size: 15px !important;
     color: #868686 !important;
 }
 
