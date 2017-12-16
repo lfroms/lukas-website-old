@@ -288,8 +288,8 @@ p.d-element {
 
 #home {
     background: url(../res/svg/hero_back.svg);
-    background-size: 970px;
-    background-position: center;
+    background-size: 1000px;
+    background-position: top;
 }
 
 #home .subtle {
