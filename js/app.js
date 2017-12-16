@@ -13,11 +13,12 @@ $(document).ready(function() {
         }
     });
 
-    updateLeftLabelPosition();
+    updateSectionTitle();
 
     $(window).scroll(function() {
-        updateLeftLabelPosition();
-
+        updateSectionTitle();
+        var pageTop = $(this).scrollTop();
+        
         $('nav a').each(function () {
             var currLink = $(this);
             var refElement = $(currLink.attr("href"));
@@ -32,7 +33,7 @@ $(document).ready(function() {
     });
 
     $(window).resize(function() {
-        updateLeftLabelPosition();
+        updateSectionTitle();
     });
 });
 
@@ -48,7 +49,7 @@ function removeMenuActiveClasses() {
     $(".slide-menu").addClass("hidden");
 }
 
-function updateLeftLabelPosition() {
+function updateSectionTitle() {
     var wrapper = $(".wrapper");
     var wrapperHeight = wrapper.height();
     var sections = wrapper.find('section');
