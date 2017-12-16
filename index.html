@@ -47,7 +47,7 @@
                             </div>
 
                             <div>
-                                <button id="scroll-down" class="ui-button pink-red">Scroll Down</button>
+                                <a data-scroll href="#about"><button id="scroll-down" class="ui-button pink-red">Scroll Down</button></a>
                             </div>
                         </div>
                     </div>
@@ -99,6 +99,11 @@
         </main>
 
         <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+        <script src="vendor/smoothscroll/smooth-scroll.min.js"></script>
         <script src="js/app.js" type="text/javascript"></script>
+
+        <script>
+            var scroll = new SmoothScroll('a[href*="#"]');
+        </script>
     </body>
 </html>
