@@ -62,8 +62,8 @@
                 </div>
 
                 <div class="inner-content col-2 autowrap">
-                    <div class="col-content">
-
+                    <div class="col-content dark-back">
+                        
                     </div>
 
                     <div class="col-content dark-back">
@@ -71,22 +71,41 @@
                         <p class="large dim">I am a <span class="bright">computer science student</span> at <span class="bright">Carleton University</span>, completing a <span class="bright">BCS* degree</span> through a <span class="bright">partnership</span> with Carleton University and <span class="bright">Shopify.</span></p>
 
                         <div class="space big"></div>
-                        
+
                         <div class="col-2 autowrap-small givemeroom" id="logo-container">
                             <div><img src="./res/img/shopify.png" alt="Shopify - Logo"></div>
                             <div><img src="./res/img/carleton.png" alt="Carleton - Logo"></div>
                         </div>
-                        
+
                         <div class="space"></div>
-                        
-                        <p class="dim">Want to know what that means?  Check out <a href="https://www.shopify.ca/education" target="_blank">shopify.ca/education</a>.</p>
+
+                        <p class="dim">Want to know what that means?  Check out <a href="https://www.shopify.ca/education/bcs" target="_blank">shopify.ca/education/bcs</a>.</p>
                     </div>
                 </div>
             </section>
 
-            <section class="page-data" id="front-end">
+            <section class="page-data light-back" id="front-end">
                 <div class="section-title">
                     <span>2 <span>I</span> INTERACTIVE F.E. DESIGN</span>
+                </div>
+
+                <header class="black">Front End Design</header>
+                <div class="large-grid">
+                    <div class="box" style="background-image: url(./res/img/webdev/otowa.png)">
+                        <label>1</label>
+                    </div>
+
+                    <div class="box" style="background-image: url(./res/img/webdev/humanlib.png)">
+                        <label>2</label>
+                    </div>
+                    
+                    <div class="box" style="background-image: url(./res/img/webdev/tedx.png)">
+                        <label>3</label>
+                    </div>
+                    
+                    <div class="box" style="background-image: url(./res/img/webdev/cblibrary.png)">
+                        <label>4</label>
+                    </div>
                 </div>
             </section>
 
@@ -132,6 +151,10 @@
 
             $('.js-tilt').tilt({
                 maxTilt: 7
+            });
+
+            $('.box').tilt({
+                maxTilt: 1
             })
         </script>
     </body>
