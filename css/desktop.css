@@ -202,7 +202,6 @@ p.dim {
 a {
 	color: #03a9f4;
 
-	font-weight: 600;
 	text-decoration: none;
 	transition: all 0.2s ease;
 }
@@ -310,11 +309,11 @@ button.pink-red:active {
 }
 
 .col-2.autowrap > div {
-    min-width: 350px;
+    flex: 1 350px;
 }
 
 .col-2.autowrap-small > div {
-    min-width: 250px;
+    flex: 1 250px;
 }
 
 .col-2.givemeroom > div {
@@ -417,7 +416,7 @@ p.d-element {
     margin-right: 170px;
     transition: all 0.3s ease;
 
-    z-index: 100;
+    z-index: 99;
 }
 
 .site-title > span {
@@ -444,11 +443,12 @@ p.d-element {
 }
 
 #about > .inner-content {
-    height: 400px;
+    
 }
 
 #about img {
     width: 65%;
+    max-width: 220px;
 }
 
 #logo-container {
