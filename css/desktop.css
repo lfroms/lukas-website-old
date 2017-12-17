@@ -302,7 +302,7 @@ p.d-element {
 #home {
     background: url(../res/svg/hero_back.svg) repeat-y;
     background-size: 1000px;
-    background-position: right;
+    background-position: right center;
 }
 
 #home .subtle {
