@@ -380,6 +380,10 @@ p.nospace {
     height: 50px
 }
 
+.padding {
+    padding: 30px;
+}
+
 .nowrap {
     white-space: nowrap;
 }
@@ -505,8 +509,7 @@ section header {
 }
 
 #about img {
-    width: 65%;
-    max-width: 220px;
+    max-width: 100px;
 }
 
 #logo-container {
