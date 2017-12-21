@@ -484,11 +484,25 @@ section header {
 
 /* --- LOCAL MEDIA QUERIES (HOME) --- */
 
-@media screen and (max-height: 740px) {
+@media screen and (max-height: 700px) {
     #home > .content {
         margin-top: 60px !important;
         padding-top: 10px;
         transition: all 0.3s ease;
+    }
+
+    #site-title {
+        width: 420px;
+        height: 90px !important;
+        margin-right: 0;
+    }
+
+    #site-title > span {
+        transform: none;
+        bottom: 10px;
+        left: 10px;
+        margin-left: 10px;
+        font-size: 0.9em;
     }
 }
 
