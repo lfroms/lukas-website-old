@@ -15,15 +15,15 @@ $(document).ready(function() {
     });
     */
 
-    updateSectionTitle();
+    //updateSectionTitle();
 
     $(window).scroll(function() {
-        updateSectionTitle();
+        //updateSectionTitle();
         updateActiveMenuItem();
     });
 
     $(window).resize(function() {
-        updateSectionTitle();
+        //updateSectionTitle();
         updateActiveMenuItem();
     });
 });
