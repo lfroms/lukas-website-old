@@ -45,7 +45,7 @@ function updateSectionTitle() {
     var pageHeight = $(this).height();
     var pageTop = $(this).scrollTop();
 
-    $.each($(".page-data"), function() {
+    $.each($("section"), function() {
         var bottom = pageTop + pageHeight;
         var sectionTop = $(this).offset().top;
         var sectionBottom = sectionTop + $(this).outerHeight();

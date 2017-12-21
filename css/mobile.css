@@ -1,15 +1,16 @@
 @media screen and (max-width: 700px) {
-    .site-title {
+    #site-title {
         width: 420px;
         height: 90px;
         margin-right: 0;
     }
 
-    .site-title > span {
+    #site-title > span {
         transform: none;
-        bottom: 0;
-        left: 0;
+        bottom: 10px;
+        left: 10px;
         margin-left: 10px;
+        font-size: 0.9em;
     }
 
     #home > .content {
@@ -18,20 +19,24 @@
 }
 
 @media screen and (max-width: 537px) {
-    .site-title {
+    #site-title {
         width: 100%;
         text-align: right;
         background: none;
-        margin-right: 20px;
+        margin: 25px 20px 0 0;
     }
 
-    .site-title > span {
+    #site-title > span {
         margin-left: 0;
         display: inline;
         top: 2px;
         position: relative;
         color: #e0e0e0;
         font-size: 30px;
+    }
+    
+    #home br:nth-child(2) {
+        display: none;
     }
     
     #home {
@@ -53,7 +58,6 @@
     #home > .content {
         margin-left: 0;
         padding: 0 20px 20px 20px;
-        margin-bottom: 20px;
         margin-right: 0;
         margin-top: 0;
         width: auto;

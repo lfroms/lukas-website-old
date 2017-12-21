@@ -16,64 +16,62 @@
         <link href="./vendor/fa/css/fontawesome-all.min.css" rel="stylesheet">
         <link href="./css/hamburgers.min.css" rel="stylesheet" type="text/css">
         <link href="./css/typeface.css" rel="stylesheet" type="text/css">
+        <link href="./vendor/flexboxgrid/flexboxgrid.min.css" rel="stylesheet" type="text/css">
+        <link href="./vendor/normalize/normalize.css" rel="stylesheet" type="text/css">
         <link href="./css/desktop.css" rel="stylesheet" type="text/css">
         <link href="./css/mobile.css" rel="stylesheet" type="text/css">
-        <link href="./vendor/normalize/normalize.css" rel="stylesheet" type="text/css">
     </head>
 
     <body>
         <main class="wrapper">
-            <section class="page-data full" id="home">
-                &nbsp;
+            <section class="full" id="home">
                 <div class="section-title fixed">
                     <span>0 <span>I</span> HELLO!</span>
                 </div>
 
-                <div class="site-title">
+                <div id="site-title">
                     <span>Lukas Romsicki</span>
                 </div>
 
                 <div class="content">
-                    <h1 data-tilt class="js-tilt">Hi.</h1>
-                    <div class="inner-content">
-                        <p>
-                            My name is Lukas.<br />
-                            I design friendly & tangible web/app experiences,<br />
-                            and produce fantastic digital content.
-                        </p>
+                    <h1 data-tilt class="js-tilt hi">Hi.</h1>
+                    <p>
+                        My name is Lukas.<br />
+                        I design friendly & tangible web/app experiences,<br />
+                        and produce fantastic digital content.
+                    </p>
 
-                        <div class="space"></div>
-                        <div class="col-2 fit-content v-align">
-                            <div>
-                                <p class="d-element nowrap green-emphasis">Have we met before?</p>
-                                <p class="d-element nowrap subtle">I think gradients are cool.</p>
-                            </div>
+                    <div class="space"></div>
+                    <div class="row">
+                        <div class="col-xs">
+                            <p class="nospace nowrap green-emphasis">Have we met before?</p>
+                            <p class="nospace nowrap subtle">I think gradients are cool.</p>
+                        </div>
 
-                            <div>
-                                <a data-scroll href="#about"><button id="scroll-down" class="ui-button pink-red">Scroll Down</button></a>
-                            </div>
+                        <div class="col-xs">
+                            <a data-scroll href="#about"><button id="scroll-down" class="ui-button pink-red">Scroll Down</button></a>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="page-data" id="about">
+            <section id="about">
                 <div class="section-title">
                     <span>1 <span>I</span> ABOUT</span>
                 </div>
 
-                <div class="inner-content col-2 autowrap">
-                    <div class="col-content light-back">
+                <div class="row">
+                    <div class="padding light-back col-sm-6">
                         
                     </div>
 
-                    <div class="col-content dark-back">
+                    <div class="padding dark-back col-sm-6">
                         <h1 class="yellow">About Me</h1>
                         <p class="large dim">I am a <span class="bright">computer science student</span> at <span class="bright">Carleton University</span>, completing a <span class="bright">BCS* degree</span> through a <span class="bright">partnership</span> with Carleton University and <span class="bright">Shopify.</span></p>
 
                         <div class="space big"></div>
 
-                        <div class="col-2 autowrap-small givemeroom" id="logo-container">
+                        <div class="autowrap-small givemeroom" id="logo-container">
                             <div><img src="./res/img/shopify.png" alt="Shopify - Logo"></div>
                             <div><img src="./res/img/carleton.png" alt="Carleton - Logo"></div>
                         </div>
@@ -85,7 +83,7 @@
                 </div>
             </section>
 
-            <section class="page-data light-back" id="front-end">
+            <section class="light-back" id="front-end">
                 <div class="section-title">
                     <span>2 <span>I</span> INTERACTIVE F.E. DESIGN</span>
                 </div>
@@ -99,11 +97,11 @@
                     <div class="box" style="background-image: url(./res/img/webdev/humanlib.png)">
                         <label>2</label>
                     </div>
-                    
+
                     <div class="box" style="background-image: url(./res/img/webdev/tedx.png)">
                         <label>3</label>
                     </div>
-                    
+
                     <div class="box" style="background-image: url(./res/img/webdev/cblibrary.png)">
                         <label>4</label>
                     </div>
