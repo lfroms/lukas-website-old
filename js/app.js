@@ -7,11 +7,13 @@ $(document).ready(function() {
         }
     });
 
+    /*
     $("section").click(function() {
         if ($(".hamburger").hasClass("is-active")) {
             removeMenuActiveClasses();
         }
     });
+    */
 
     updateSectionTitle();
 

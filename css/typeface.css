@@ -3,3 +3,57 @@
 
 /* ROBOTO */
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700,700i,900');
+
+/* Futura-Bold webfont (new-bulletproof) */ 
+@font-face {
+    font-family: 'Futura-Bold';
+    src: url('../assets/futura/Futura-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../assets/futura/Futura-Bold.woff') format('woff'),
+        url('../assets/futura/Futura-Bold.ttf')  format('truetype'),
+        url('../assets/futura/Futura-Bold.svg#webfont') format('svg');
+}
+
+/* Futura-Book webfont (new-bulletproof) */ 
+@font-face {
+    font-family: 'Futura-Book';
+    src: url('../assets/futura/Futura-Book.eot?#iefix') format('embedded-opentype'),
+        url('../assets/futura/Futura-Book.woff') format('woff'),
+        url('../assets/futura/Futura-Book.ttf')  format('truetype'),
+        url('../assets/futura/Futura-Book.svg#webfont') format('svg');
+}
+
+/* Futura-Light-Italic webfont (new-bulletproof) */ 
+@font-face {
+    font-family: 'Futura-Light-Italic';
+    src: url('../assets/futura/Futura-Light-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../assets/futura/Futura-Light-Italic.woff') format('woff'),
+        url('../assets/futura/Futura-Light-Italic.ttf')  format('truetype'),
+        url('../assets/futura/Futura-Light-Italic.svg#webfont') format('svg');
+}
+
+/* Futura-Light webfont (new-bulletproof) */ 
+@font-face {
+    font-family: 'Futura-Light';
+    src: url('../assets/futura/Futura-Light.eot?#iefix') format('embedded-opentype'),
+        url('../assets/futura/Futura-Light.woff') format('woff'),
+        url('../assets/futura/Futura-Light.ttf')  format('truetype'),
+        url('../assets/futura/Futura-Light.svg#webfont') format('svg');
+}
+
+/* Futura-Medium webfont (new-bulletproof) */ 
+@font-face {
+    font-family: 'Futura-Medium';
+    src: url('../assets/futura/Futura-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../assets/futura/Futura-Medium.woff') format('woff'),
+        url('../assets/futura/Futura-Medium.ttf')  format('truetype'),
+        url('../assets/futura/Futura-Medium.svg#webfont') format('svg');
+}
+
+/* Futura-Medium-Italic webfont (new-bulletproof) */ 
+@font-face {
+    font-family: 'Futura-Medium-Italic';
+    src: url('../assets/futura/Futura-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('../assets/futura/Futura-MediumItalic.woff') format('woff'),
+        url('../assets/futura/Futura-MediumItalic.ttf')  format('truetype'),
+        url('../assets/futura/Futura-MediumItalic.svg#webfont') format('svg');
+}

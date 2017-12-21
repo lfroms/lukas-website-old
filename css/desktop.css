@@ -10,7 +10,7 @@ html, body {
     background: #191919;
     color: #f5f5f5;
 
-    font-family: "Futura", sans-serif;
+    font-family: "Futura-Medium", sans-serif;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
 }
@@ -158,7 +158,7 @@ section.full {
 
     color: #f5f5f5;
 
-    font-family: "Futura", sans-serif;
+    font-family: "Futura-Medium", sans-serif;
     text-transform: uppercase;
     font-size: 2.2em;
     line-height: 1;
@@ -227,7 +227,7 @@ button.ui-button {
     outline: none;
     cursor: pointer;
 
-    font-family: 'Futura', sans-serif;
+    font-family: "Futura-Medium", sans-serif;
     letter-spacing: 0.5px;
     font-size: 15px;
 }
@@ -293,45 +293,6 @@ button.pink-red:active {
     color: #f5f5f5;
 }
 
-/* --- FLEXIBLE LAYOUTS --- */
-/*
-.col-2 {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.col-2 > div {
-    flex: 1;
-}
-
-.col-2.fit-content {
-    justify-content: flex-start;
-}
-
-.col-2.fit-content div {
-    flex: 0;
-}
-
-.col-2.v-align {
-    align-items: center;
-}
-
-.col-2 > div.col-content {
-    padding: 30px 35px 30px 35px;
-}
-
-.col-2.autowrap > div {
-    flex: 1 350px;
-}
-
-.col-2.autowrap-small > div {
-    flex: 1 250px;
-}
-
-.col-2.givemeroom > div {
-    margin-bottom: 30px;
-}
-*/
 p.nospace {
     margin: 0 !important;
 }
@@ -427,8 +388,7 @@ section header {
 }
 
 #home > .content {
-    margin-left: 180px;
-    margin-top: 170px;
+    margin: 170px 0 20px 180px;
     padding: 40px;
     width: 600px;
     background: #191919;
@@ -464,7 +424,7 @@ section header {
 }
 
 #site-title {
-    font-family: "Futura";
+    font-family: "Futura-Medium";
     text-transform: uppercase;
     font-size: 42px;
     color: #ffffff;
@@ -509,7 +469,8 @@ section header {
 }
 
 #about img {
-    max-width: 100px;
+    max-width: 200px;
+    margin-bottom: 20px;
 }
 
 #logo-container {
