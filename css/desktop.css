@@ -148,13 +148,13 @@ section.full {
     font-family: "Futura-Medium", sans-serif;
     text-transform: uppercase;
     font-size: 1.3em;
-    line-height: 0.8;
+    line-height: 1.4;
     padding: .5em;
     position: fixed;
     z-index: 999;
     bottom: 0;
     left: 0;
-    height: 130px;
+    height: 140px;
     text-align: center;
 }
 
