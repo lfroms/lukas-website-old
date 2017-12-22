@@ -192,6 +192,10 @@ p {
     font-size: 1.2em;
 }
 
+.small {
+    font-size: 0.9em;
+}
+
 .dim {
     color: #bdbdbd;
 }
@@ -492,7 +496,7 @@ section header {
     text-align: left;
     padding: 20px;
     width: 280px;
-    height: 180px;
+    height: 150px;
     position: absolute;
 }
 
