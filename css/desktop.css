@@ -95,8 +95,8 @@ html, body {
     float: left;
     position: fixed;
 
-    width: 62px;
-    height: 62px;
+    width: 58px;
+    height: 58px;
 
     border-radius: 31px;
     box-shadow: 1px 1px 13px 0 #000000;
@@ -113,8 +113,8 @@ html, body {
 }
 
 .hamburger {
-    margin: 4px 0 0 -4px;
-    transform: scale(0.75);
+    margin: 2px 0 0 -6px;
+    transform: scale(0.70);
     color: white;
 
     outline: none;
