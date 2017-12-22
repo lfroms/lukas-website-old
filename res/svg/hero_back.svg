@@ -1,5 +1,6 @@
-<svg width="1297px" height="754px" viewBox="0 0 1297 754" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+
+<svg width="1297px" height="695px" viewBox="0 0 1297 695" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -8,12 +9,10 @@
             <polygon id="Triangle" stroke="#FF9800" transform="translate(148.025595, 198.025595) rotate(-13.000000) translate(-148.025595, -198.025595) " points="148.025595 182.161958 163.889233 213.889233 132.161958 213.889233"></polygon>
             <polygon id="Triangle" stroke="#2196F3" transform="translate(839.873475, 403.873475) rotate(30.000000) translate(-839.873475, -403.873475) " points="839.873475 384.932777 858.814174 422.814174 820.932777 422.814174"></polygon>
             <circle id="Oval" stroke="#4CAF50" cx="923.5" cy="78.5" r="17.5"></circle>
-            <polyline id="Path-2" stroke="#E5E5E5" transform="translate(288.156190, 776.598971) rotate(-60.000000) translate(-288.156190, -776.598971) " points="249.653154 781.107698 265.09246 772.090244 280.893148 781.107698 297.296953 772.090244 310.448321 781.107698 326.659227 772.090244"></polyline>
-            <path d="M734.3531,615.280805 C748.294101,600.066083 762.590994,600.066083 777.24378,615.280805" id="Path-3" stroke="#FF9800" transform="translate(755.798440, 609.575284) rotate(-47.000000) translate(-755.798440, -609.575284) "></path>
+            <path d="M590.3531,739.280805 C604.294101,724.066083 618.590994,724.066083 633.24378,739.280805" id="Path-3" stroke="#FF9800" transform="translate(611.798440, 733.575284) rotate(-47.000000) translate(-611.798440, -733.575284) "></path>
             <path d="M465.3531,390.280805 C479.294101,375.066083 493.590994,375.066083 508.24378,390.280805" id="Path-3" stroke="#4CAF50" transform="translate(486.798440, 384.575284) rotate(47.000000) translate(-486.798440, -384.575284) "></path>
-            <path d="M486,117 L486,152.570709" id="Path-4" stroke="#009688"></path>
+            <path d="M505,167 L486,197.570709" id="Path-4" stroke="#009688"></path>
             <path d="M1239,618 L1267.6831,639.545249" id="Path-5" stroke="#F44336"></path>
-            <polyline id="Path-2" stroke="#E5E5E5" transform="translate(1082.156190, 250.598971) rotate(60.000000) translate(-1082.156190, -250.598971) " points="1043.65315 255.107698 1059.09246 246.090244 1074.89315 255.107698 1091.29695 246.090244 1104.44832 255.107698 1120.65923 246.090244"></polyline>
         </g>
     </g>
 </svg>
