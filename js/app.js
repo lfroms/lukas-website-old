@@ -6,6 +6,10 @@ $(document).ready(function() {
             addMenuActiveClasses();
         }
     });
+    
+    $("#dim").click(function () {
+        removeMenuActiveClasses();
+    });
 
     $(window).scroll(function() {
         updateActiveMenuItem();
@@ -20,12 +24,16 @@ function addMenuActiveClasses() {
     $(".hamburger").addClass("is-active");
     $(".menu-button").addClass("is-active");
     $(".slide-menu").removeClass("hidden");
+    
+    $("#dim").addClass("dimmed");
 }
 
 function removeMenuActiveClasses() {
     $(".hamburger").removeClass("is-active");
     $(".menu-button").removeClass("is-active");
     $(".slide-menu").addClass("hidden");
+    
+    $("#dim").removeClass("dimmed");
 }
 
 function updateActiveMenuItem() {

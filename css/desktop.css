@@ -38,14 +38,14 @@ html, body {
     width: 375px;
     height: 100%;
 
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(.99,.5,.3,.91);
 
     z-index: 99;
 }
 
 .slide-menu.hidden {
     transform: translateX(-380px);
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(.99,.5,.3,.91);
     box-shadow: none;
 }
 
@@ -124,6 +124,24 @@ html, body {
     background: white;
 }
 
+#dim {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    
+    pointer-events: none;
+    z-index: 9;
+}
+
+#dim.dimmed {
+    opacity: 1;
+    pointer-events: all;
+    transition: opacity 0.3s ease-in-out;
+}
+
 /* --- PAGE SECIONS --- */
 
 section {
@@ -135,10 +153,7 @@ section.full {
     min-height: 100%;
 }
 
-.section-title {
-    white-space: nowrap;
-    text-align: left;
-
+#branding {
     display: block;
     position: absolute;
 
@@ -149,26 +164,29 @@ section.full {
     text-transform: uppercase;
     font-size: 1.3em;
     line-height: 1.4;
+    
     padding: .5em;
     position: fixed;
-    z-index: 999;
+    
     bottom: 0;
     left: 0;
     height: 110px;
     text-align: center;
+    
+    z-index: 999;
 }
 
-.section-title > span > span {
+#branding > span > span {
     font-weight: 300;
     opacity: 0.5;
 }
 
-.section-title.fixed {
+#branding.fixed {
     position: fixed;
     bottom: 0;
 }
 
-.section-title.bottom {
+#branding.bottom {
     top: auto;
     bottom: 0;
 }
@@ -458,7 +476,7 @@ section header {
     margin-right: 170px;
     transition: all 0.3s ease;
 
-    z-index: 99;
+    z-index: 8;
 }
 
 #site-title > span {

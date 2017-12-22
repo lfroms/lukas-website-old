@@ -19,8 +19,12 @@
 }
 
 @media screen and (max-width: 850px) {
-    .section-title {
+    #branding {
         display: none;
+    }
+    
+     .full {
+        min-height: 0 !important;
     }
 }
 
@@ -43,10 +47,6 @@
     
     #home br:nth-child(2) {
         display: none;
-    }
-    
-    .full {
-        min-height: 0 !important;
     }
     
     #home {
