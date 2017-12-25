@@ -266,6 +266,7 @@ button.pink-red:hover {
 button.pink-red:active {
     background: linear-gradient(162deg, rgba(200, 81, 245, 0.7) 0%, rgba(159, 4, 27, 0.7) 100%);
     color: #e0e0e0;
+    transform: scale(1);
 }
 
 .green-emphasis {
@@ -486,6 +487,7 @@ section header {
     background-size: cover;
     background-position: center center;
     border-radius: 5px;
+    box-shadow: 0px 6px 33px -6px rgba(0,0,0,0.75);
 }
 
 .fe-desc {
@@ -498,6 +500,7 @@ section header {
     width: 280px;
     height: 150px;
     position: absolute;
+    box-shadow: 0px 6px 33px -6px rgba(0,0,0,0.75);
 }
 
 /* --- LOCAL MEDIA QUERIES (HOME) --- */
