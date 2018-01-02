@@ -23,6 +23,15 @@
     </head>
 
     <body>
+        <div id="loading">
+            <div>
+                <div class="spinner">
+                    <div class="dot1"></div>
+                    <div class="dot2"></div>
+                </div>
+            </div>
+        </div>
+
         <main class="wrapper">
             <div id="branding">
                 <span><img src="./assets/svg/logo.svg" style="width: 35px"><br />LR<br />18</span>
@@ -409,6 +418,10 @@
 
                 window.sr = ScrollReveal();
                 sr.reveal('.on-scroll');
+            });
+
+            $(window).on('load', function() {
+                $("#loading").fadeOut(700);
             });
         </script>
     </body>
