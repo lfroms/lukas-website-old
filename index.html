@@ -56,12 +56,10 @@
 
         <div id="incompatible-ie"></div>
 
-        <main class="wrapper">
+        <main>
             <div id="branding">
                 <span><img src="./assets/svg/logo.svg" style="width: 35px"><br />LR<br />18</span>
             </div>
-
-            <div id="dim"></div>
 
             <section class="full" id="home">
                 <div id="site-title">
@@ -444,13 +442,8 @@
             $(document).ready(function() {
                 var scroll = new SmoothScroll('a[href*="#"]');
 
-                $('.js-tilt').tilt({
-                    maxTilt: 7
-                });
-
-                $('.box').tilt({
-                    maxTilt: 2
-                });
+                $('.js-tilt').tilt({ maxTilt: 7 });
+                $('.box').tilt({ maxTilt: 2 });
 
                 window.sr = ScrollReveal({ reset: true, viewFactor: 0.4 });
                 sr.reveal('.on-scroll');

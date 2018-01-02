@@ -15,7 +15,7 @@ html, body {
     -webkit-font-smoothing: antialiased;
 }
 
-.wrapper {
+main {
     height: 100%;
     width: 100%;
     position: relative;
@@ -31,7 +31,7 @@ html, body {
     right: 0;
     background: #121212;
     z-index: 99999;
-    
+
     pointer-events: none;
 }
 
@@ -92,17 +92,17 @@ html, body {
 
 #incompatible-ie {
     display: none;
-    
+
     position: fixed;
     pointer-events: none;
-    
+
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    
+
     margin: 0 auto;
-    
+
     background: url('../assets/img/old-ie.png') no-repeat center;
     background-size: 500px;
 }
@@ -685,51 +685,4 @@ section header {
 .c-desc-right {
     text-align: right;
     padding-right: 40px;
-}
-
-
-/* --- LOCAL MEDIA QUERIES (HOME) --- */
-
-@media screen and (max-height: 700px) {
-    #home > .content {
-        margin-top: 60px !important;
-        padding-top: 10px;
-        transition: all 0.3s ease;
-    }
-
-    #site-title {
-        width: 420px;
-        height: 90px !important;
-        margin-right: 0;
-    }
-
-    #site-title > span {
-        transform: none;
-        bottom: 10px;
-        left: 10px;
-        margin-left: 10px;
-        font-size: 0.9em;
-    }
-}
-
-@media screen and (max-height: 840px) {
-    #site-title {
-        height: 440px;
-    }
-
-    #home > .content {
-        margin-top: 120px;
-        transition: all 0.3s ease;
-    }
-}
-
-@media screen and (max-width: 935px) {
-    #site-title {
-        margin-right: 30px;
-        transition: all 0.3s ease;
-    }
-
-    #home > .content {
-        margin-left: 60px;
-    }
 }

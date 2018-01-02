@@ -1,3 +1,49 @@
+@media screen and (max-height: 700px) {
+    #home > .content {
+        margin-top: 60px !important;
+        padding-top: 10px;
+        transition: all 0.3s ease;
+    }
+
+    #site-title {
+        width: 420px;
+        height: 90px !important;
+        margin-right: 0;
+    }
+
+    #site-title > span {
+        transform: none;
+        bottom: 10px;
+        left: 10px;
+        margin-left: 10px;
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-height: 840px) {
+    #site-title {
+        height: 440px;
+    }
+
+    #home > .content {
+        margin-top: 120px;
+        transition: all 0.3s ease;
+    }
+}
+
+@media screen and (max-width: 935px) {
+    #site-title {
+        margin-right: 30px;
+        transition: all 0.3s ease;
+    }
+
+    #home > .content {
+        margin-left: 60px;
+    }
+}
+
+/* HANDHELD DEVICES */
+
 @media screen and (max-width: 700px) {
     #site-title {
         width: 420px;
