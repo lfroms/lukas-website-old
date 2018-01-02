@@ -1,3 +1,14 @@
+<!--
+
+    This is not the code you're looking for...
+
+    ...or maybe it is.
+
+
+    All source copyright 2018 Lukas Romsicki
+
+-->
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -13,13 +24,24 @@
 
         <link rel="icon" href="./favicon.png">
 
-        <link href="./vendor/fontawesome/css/fontawesome-all.min.css" rel="stylesheet">
         <link href="./css/hamburgers.min.css" rel="stylesheet" type="text/css">
         <link href="./css/typeface.css" rel="stylesheet" type="text/css">
         <link href="./vendor/flexboxgrid/flexboxgrid.min.css" rel="stylesheet" type="text/css">
         <link href="./vendor/normalize/normalize.css" rel="stylesheet" type="text/css">
         <link href="./css/desktop.css" rel="stylesheet" type="text/css">
         <link href="./css/mobile.css" rel="stylesheet" type="text/css">
+
+        <!--[if lt IE 10]>
+            <style>
+                main, #loading {
+                    display: none;
+                }
+
+                #incompatible-ie {
+                    display: block;
+                }
+            </style>
+        <![endif]-->
     </head>
 
     <body>
@@ -31,6 +53,8 @@
                 </div>
             </div>
         </div>
+
+        <div id="incompatible-ie"></div>
 
         <main class="wrapper">
             <div id="branding">
@@ -375,7 +399,19 @@
                         </p>
                     </div>
                 </div>
+
+                <div class="space"></div>
+
+                <div class="row center-xs middle-xs">
+                    <div class="col-sm on-scroll">
+                        Check out my photos on&nbsp;&nbsp;
+                        <a data-scroll href="http://flickr.com/photos/lfroms"><button id="flickr-open" class="ui-button pink-red">Flickr</button></a>
+                    </div>
+                </div>
             </section>
+            <footer>
+                <p class="dim">Copyright &copy; 2018 Lukas Romsicki</p>
+            </footer>
 
             <div class="slide-menu hidden">
                 <nav>
@@ -398,7 +434,7 @@
         </main>
 
         <script src="./js/jquery-3.2.1.min.js" type="text/javascript"></script>
-        <script src="./js/scrollreveal.min.js" type="text/javascript"></script>
+        <script src="./vendor/scrollreveal/scrollreveal.min.js" type="text/javascript"></script>
         <script src="./vendor/prefixfree/prefixfree.min.js" type="text/javascript"></script>
         <script src="./vendor/tilt/tilt.jquery.min.js" type="text/javascript"></script>
         <script src="./vendor/smoothscroll/smooth-scroll.min.js"></script>
@@ -416,7 +452,7 @@
                     maxTilt: 2
                 });
 
-                window.sr = ScrollReveal();
+                window.sr = ScrollReveal({ reset: true, viewFactor: 0.4 });
                 sr.reveal('.on-scroll');
             });
 
