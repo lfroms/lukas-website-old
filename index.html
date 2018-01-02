@@ -25,11 +25,11 @@
     <body>
         <main class="wrapper">
             <div id="branding">
-                <span><img src="./assets/svg/logo.svg" style="width: 35px"><br />LR<br />17</span>
+                <span><img src="./assets/svg/logo.svg" style="width: 35px"><br />LR<br />18</span>
             </div>
-            
+
             <div id="dim"></div>
-            
+
             <section class="full" id="home">
                 <div id="site-title">
                     <span>Lukas Romsicki</span>
@@ -60,7 +60,7 @@
             <section id="about">
                 <div class="row">
                     <div class="padding dark-back col-sm-6" id="profile">
-
+                        <p class="dim">Image coming soon.</p>
                     </div>
 
                     <div class="padding dark-back col-sm-6">
@@ -86,29 +86,43 @@
                 </div>
             </section>
 
-            <section class="light-back" id="front-end">
-                <header class="black">Front End Design</header>
-                <div class="row start-xs">
-                    <div class="col-xs fe-box">
-                        <div class="fe-desc">
-                            <b>Oto-Wa Taiko</b>
-                            <p class="dim small">Japanese drumming group located in Ottawa, Ontario. Dynamic website built using AngularJS.</p>
-                            <p><a href="http://otowataiko.ca">Visit this Project</a></p>
-                        </div>
-                        <div class="fe-image" style="background-image: url(./assets/img/webdev/otowa.png)"></div>
+            <section class="dark-back" id="front-end">
+                <header class="white italic">Front End <span class="red">Design</span></header>
+                
+                <div class="space"></div>
+
+                <div class="row around-xs middle-xs">
+                    <div class="col-sm-5">
+                        <img src="./assets/img/webdev/otowa.png" class="box">
+                    </div>
+
+                    <div class="col-sm-5 fe-desc-right">
+                        <h1 class="red-emphasis xl">01</h1>
+                        <p class="bold">OTO-WA TAIKO</p>
+                        
+                        <p>Oto-Wa Taiko is a Japanese drumming group in Ottawa, Ontario.  This is a dynamic website, created using AngularJS and navigation based on UI-Router.  The site also uses Firebase to manage content, and user accounts for members of the group.  The site features a friendly design which suits the desired aesthetic of the art form and brand.</p>
+                        
+                        <p><a href="http://otowataiko.ca">otowataiko.ca</a></p>
                     </div>
                 </div>
                 
-                <div class="row end-xs ">
-                    <div class="col-xs fe-box">
-                        <div class="fe-desc">
-                            <b>SWL & CB Human Library</b>
-                            <p class="dim small">A local "human library" event.  This website hosts the portfolios for all guests.  Built using MDL framework.</p>
-                            <p><a href="http://swlcbhumanlibrary.ca">Visit this Project</a></p>
-                        </div>
-                        <div class="fe-image" style="background-image: url(./assets/img/webdev/humanlib.png)"></div>
+                <div class="space"></div>
+                
+                <div class="row around-xs middle-xs">
+                    <div class="col-sm-5 fe-desc-left">
+                        <h1 class="orange-emphasis xl">01</h1>
+                        <p class="bold">OTO-WA TAIKO</p>
+                        
+                        <p>Oto-Wa Taiko is a Japanese drumming group in Ottawa, Ontario.  This is a dynamic website, created using AngularJS and navigation based on UI-Router.  The site also uses Firebase to manage content, and user accounts for members of the group.  The site features a friendly design which suits the desired aesthetic of the art form and brand.</p>
+                        
+                        <p><a href="http://otowataiko.ca">otowataiko.ca</a></p>
+                    </div>
+                    
+                    <div class="col-sm-5">
+                        <img src="./assets/img/webdev/otowa.png" class="box">
                     </div>
                 </div>
+
             </section>
 
             <section class="page-data" id="cs-projects">
@@ -152,7 +166,7 @@
                 });
 
                 $('.box').tilt({
-                    maxTilt: 1
+                    maxTilt: 2
                 });
             });
         </script>
