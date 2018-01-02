@@ -131,7 +131,7 @@ html, body {
     background: rgba(0, 0, 0, 0.5);
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
-    
+
     pointer-events: none;
     z-index: 9;
 }
@@ -164,15 +164,15 @@ section.full {
     text-transform: uppercase;
     font-size: 1.3em;
     line-height: 1.4;
-    
+
     padding: .5em;
     position: fixed;
-    
+
     bottom: 0;
     left: 0;
     height: 110px;
     text-align: center;
-    
+
     z-index: 999;
 }
 
@@ -520,6 +520,15 @@ section header {
 
 #app-dev img {
     width: 100%;
+}
+
+
+/* === CINE SECTION === */
+
+.cine {
+    padding-bottom: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 
