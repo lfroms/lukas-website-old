@@ -42,7 +42,10 @@ function updateActiveMenuItem() {
     $('nav a').each(function () {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
-        if (refElement.position().top <= pageTop && refElement.position().top + refElement.height() > pageTop) {
+
+        if (refElement.position().top <= pageTop && 
+            refElement.position().top + refElement.height() > pageTop) {
+
             $('nav a').removeClass("active");
             currLink.addClass("active");
         }
