@@ -342,7 +342,7 @@ button.pink-red:active {
 }
 
 .black {
-    color: #424242;
+    color: #191919;
 }
 
 .white {
@@ -510,8 +510,16 @@ section header {
     text-align: right;
 }
 
-.outline-box {
-    
+/* === APPLICATION SECTION === */
+
+#app-dev {
+    padding-bottom: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#app-dev img {
+    width: 100%;
 }
 
 
