@@ -362,6 +362,11 @@ p.nospace {
     margin: 0 !important;
 }
 
+p.smallspace {
+    margin: 0 !important;
+    margin-top: 5px !important;
+}
+
 .space {
     display: block;
     height: 20px;
