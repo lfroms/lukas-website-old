@@ -68,8 +68,8 @@
     #branding {
         display: none;
     }
-    
-     .full {
+
+    .full {
         min-height: 0 !important;
     }
 }
@@ -90,11 +90,11 @@
         color: #e0e0e0;
         font-size: 30px;
     }
-    
+
     #home br:nth-child(2) {
         display: none;
     }
-    
+
     #home {
         background: none;
     }
@@ -114,8 +114,25 @@
         margin-top: 0;
         width: auto;
     }
-    
+
     #home .ui-button {
         display: none;
+    }
+
+    .c-desc-left {
+        padding-left: 0;
+    }
+
+    .c-desc-right {
+        padding-right: 0;
+    }
+    
+    #rtv {
+        width: 100%;
+        height: auto;
+    }
+    
+    #flickr-open {
+        margin-top: 10px;
     }
 }

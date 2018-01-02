@@ -585,6 +585,24 @@ section header {
     background-size: cover;
     min-height: 414px;
     flex: 0 0 100%;
+    
+    padding: 0;
+}
+
+#profile-circle {
+    display: inline-block;
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+
+    background: url('../assets/img/lukastemp.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 /* === FRONT END SECTION === */
