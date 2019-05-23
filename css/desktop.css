@@ -609,7 +609,6 @@ section header:first-child {
 /* ==== ABOUT SECTION ==== */
 
 #about {
-  background: #f5f5f5;
   color: #424242;
 }
 
@@ -619,29 +618,14 @@ section header:first-child {
 }
 
 #profile {
-  background: #1a237e;
+  background: url('../assets/svg/polygons.svg');
+  background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  /* background-size: cover; */
   min-height: 414px;
   flex: 0 0 100%;
 
   padding: 0;
-}
-
-#profile-circle {
-  display: inline-block;
-  width: 270px;
-  height: 270px;
-  border-radius: 50%;
-
-  background: url('../assets/img/lukastemp.jpg');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 /* === FRONT END SECTION === */
@@ -741,4 +725,12 @@ section header:first-child {
 .c-desc-right {
   text-align: right;
   padding-right: 40px;
+}
+
+/* === CONTACT SECTION === */
+
+#contact {
+  padding-bottom: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
