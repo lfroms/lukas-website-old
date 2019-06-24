@@ -45,7 +45,7 @@ All source copyright 2019 Lukas Romsicki
 
 	<!--[if lt IE 10]>
 <style>
-main, #loading {
+main {
 display: none;
 }
 
@@ -59,15 +59,6 @@ display: block;
 <body>
 
 	<div id="dim"></div>
-
-	<div id="loading">
-		<div>
-			<div class="spinner">
-				<div class="dot1"></div>
-				<div class="dot2"></div>
-			</div>
-		</div>
-	</div>
 
 	<div id="incompatible-ie"></div>
 
@@ -570,10 +561,6 @@ display: block;
 				viewFactor: 0.4
 			});
 			sr.reveal('.on-scroll');
-		});
-
-		$(window).on('load', function () {
-			$("#loading").fadeOut(700);
 		});
 	</script>
 </body>
